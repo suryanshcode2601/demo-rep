@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Public Complaint Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="#home">Home</a>
+                <a href="#complaint">Submit Complaint</a>
+                <a href="#issues">Issues</a>
+            </div>
+            <div class="nav-right">
+                <button class="signin-btn">Sign In</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>AI Public Issue Portal</h1>
+        <p>A simple platform for citizens to report local problems.</p>
+    </section>
+
+    <!-- Complaint Form -->
+    <section id="complaint">
+        <h2>Submit a Complaint</h2>
+
+        <form id="complaintForm">
+            <input type="text" id="title" placeholder="Issue Title" required><br>
+            <textarea id="description" placeholder="Describe your issue" required></textarea><br>
+            <input type="text" id="location" placeholder="Location" required><br>
+            <button type="submit">Submit Complaint</button>
+        </form>
+    </section>
+
+    <!-- Issues Table -->
+    <section id="issues">
+        <h2>Reported Issues</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Location</th>
+                    <th>Priority Score (AI)</th>
+                </tr>
+            </thead>
+            <tbody id="issuesTable">
+                <tr>
+                    <td>Broken Street Light</td>
+                    <td>Main Road</td>
+                    <td>7.5</td>
+                </tr>
+                <tr>
+                    <td>Water Leakage</td>
+                    <td>Sector 5</td>
+                    <td>8.2</td>
+                </tr>
+                <tr>
+                    <td>Garbage Overflow</td>
+                    <td>Market Area</td>
+                    <td>6.8</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Connect with us:</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+        </div>
+        <p>© 2026 AI Public Issue Portal</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
